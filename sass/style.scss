@@ -1,0 +1,194 @@
+@import "fonts.css";
+
+body{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+ul,li{
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    max-width: 264px;
+    width: 100%;
+    background-color: #2f323a;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100vh;
+
+    .nav-header{
+        padding: 20px 47px 20px 48px;
+        background-color: #1e2025;
+        img{
+            width: 100%;
+        }
+
+    }
+
+    .nav-body{
+        //padding: 24px 20px;
+        .nav-info{
+            .nav-navigate{
+                padding: 24px 20px;
+                input[type=text] {
+                    font-size: 19px;
+                    border: 0px;
+                    border-bottom: 2px solid #373b42;
+                    
+                    width: 215px;
+                    height: 25px;
+                    background-color: transparent;
+                }
+                input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+                    color:    #575a5f;
+                }
+                input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                   color:    #575a5f;
+                   opacity:  1;
+                }
+                input::-moz-placeholder { /* Mozilla Firefox 19+ */
+                   color:    #575a5f;
+                   opacity:  1;
+                }
+                input::-ms-input-placeholder { /* Internet Explorer 10-11 */
+                   color:    #575a5f;
+                }
+                input::-ms-input-placeholder { /* Microsoft Edge */
+                   color:    #575a5f;
+                }
+            }
+
+            .nav-container{
+
+               //background-color: #fff;
+               .activo{
+                    background-color: #1e2025;
+               }
+               li{
+
+                
+                padding: 13px 25px 17px 25px;
+                a{
+                    width: 100%;
+                    font-family: "Proxima Nova";
+                    font-size: 16px;
+                    //font-weight: 600;
+                    text-align: left;
+                    color: #ffffff;
+
+                    i{
+                        text-align: center;
+                        padding-right: 14px;
+
+                    }
+
+                }
+                &:hover{
+                    background-color: #1e2025;
+                }
+               }
+            }           
+
+        }
+
+        .nav-close{
+            padding: 117px 25px 17px 25px;
+            a{
+                font-family: 'Proxima Nova';
+                font-size: 16px;
+                text-align: left;
+                color: #ffffff;;
+                
+                i{
+                    text-align: center;
+                    padding-right: 14px;
+                }
+
+            }
+            
+        }
+    }
+} 
+
+.container-info{
+    margin-left: 264px;
+
+    .container-user{
+        padding: 0px 60px;
+        height: 61px;
+        background-color: #2f323a;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: flex-end;
+        align-items: center;
+
+        .user{
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: flex-end;
+            align-items: center;
+
+            font-family: ProximaNova;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.36;
+            color: #ffffff;
+            span{
+                padding-right: 10px;
+            }
+            i img{
+                margin-top: 3px;
+            }
+        }
+    }
+}
+
+.main-info{
+    background-color:#f5f5fa;
+    height: 100%;
+
+    padding: 36px 37px;
+}
+
+
+/* Animaciones */
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  .fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+  }
